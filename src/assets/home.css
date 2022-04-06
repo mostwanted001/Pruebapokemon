@@ -57,7 +57,7 @@ body{
 }
 
 .contenedorSub{
-    width: 458px;
+    width: 564px;
     height: 54px;
     margin-bottom: 50px;
 }
@@ -68,7 +68,8 @@ body{
     font-size: 18px;
     line-height: 150%;
     color: #5e5e5e;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
 }
 
 .containerButton{
@@ -87,6 +88,7 @@ body{
     border-radius: 60px;
     border: red;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
 }
 
 /* parte mobile*/
@@ -163,6 +165,7 @@ body{
         line-height: 150%;
         color: #5e5e5e;
         font-weight: 500;
+        font-family: 'Lato', sans-serif;
     }
     
     .containerButton{
@@ -181,5 +184,6 @@ body{
         border-radius: 60px;
         border: red;
         cursor: pointer;
+        font-family: 'Lato', sans-serif;
     }
 }

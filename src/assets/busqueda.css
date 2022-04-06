@@ -93,6 +93,7 @@
         color: #353535;
         margin: 0;
         margin-top: 40px;
+        font-family: 'Lato', sans-serif;
     
         }
     
@@ -101,5 +102,6 @@
           font-size: 20px;
           font-weight: 500;
           color: #5e5e5e;
+          font-family: 'Lato', sans-serif;
         }
     }
