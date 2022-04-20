@@ -1,0 +1,250 @@
+
+.detalle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 90px 10px 10px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 7, 0, 0.562);
+}
+
+.detallepokemoncard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 50px 0 0;
+    position: relative;
+    max-width: 570px;
+    height: 506px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+}
+
+.fondopokemon {
+    position: relative;
+    top: -83px;
+
+}
+
+.botoncerrar {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.property {
+    width: 90%;
+    max-width: 560px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    FONT-WEIGHT: 700;
+    font-size: 18px;
+    line-height: 27px;
+    position: relative;
+    top: -58px;
+    left: -14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.left {
+    float: left;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #5E5E5E;
+}
+
+.right {
+    float: left;
+    margin-left: 12px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #5E5E5E;
+}
+
+.buttonCopiar {
+    background-color: red;
+    width: 195px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    border-radius: 60px;
+    border: red;
+    cursor: pointer;
+    left: -162px;
+    top: 40px;
+}
+
+
+.pokemonimagen{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 36%;
+    top: 41px;
+
+}
+
+.elipsebutton{
+position: relative;
+top: 18px;
+left: 104px;
+}
+
+.estrellabutton{
+    position: relative;
+    top: 8px;
+    left: 69px;
+    cursor: pointer;
+}
+
+.buttonfavoritos{
+    position: relative;
+    top: -16px;
+    right: -133px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .detalle {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 77px 1px 0px 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgba(10, 7, 0, 0.562);
+    }
+    
+    .detallepokemoncard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 50px 0 0;
+        position: relative;
+        max-width: 570px;
+        height: 506px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .fondoAzul{
+        width: 339px;
+        height: 167%;
+        position: relative;
+        left: -144px;
+        top: -21px;
+        border-radius: 5px 5px 0px 0;
+    }
+
+    .fondopokemon {
+        position: relative;
+        top: -83px;
+        width: 50px;
+    
+    }
+    
+    .botoncerrar {
+        position: absolute;
+        top: -12px;
+        right: -136px;
+        cursor: pointer;
+    }
+    
+    .property {
+        width: 90%;
+        max-width: 560px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+        FONT-WEIGHT: 700;
+        font-size: 18px;
+        line-height: 27px;
+        position: relative;
+        top: 8px;
+        left: -14px;
+        font-family: 'Lato', sans-serif;
+        margin-left: 30px;
+    }
+    
+    .left {
+        float: left;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .right {
+        float: left;
+        font-family: 'Lato', sans-serif;
+        text-transform: capitalize;
+        margin-left: 5px;
+    
+    }
+    
+    .buttonCopiar {
+        background-color: red;
+        width: 195px;
+        height: 44px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        position: static;
+        border-radius: 60px;
+        border: red;
+        cursor: pointer;
+        top: 62px;
+        position: relative;
+        left: -43px;    
+    }
+
+    .pokemonimagen{
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        left: -64px;
+        top: 21px;
+    }
+
+    .elipsebutton{
+        position: relative;
+    top: 18px;
+    left: 104px;
+    }
+    
+    .estrellabutton{
+        position: relative;
+        top: 8px;
+        left: 69px;
+        cursor: pointer;
+    }
+
+    .buttonfavoritos {
+        position: relative;
+        top: 0px;
+        right: -22px;
+    }
+
+    .pokeDetail__divider {
+        margin-top: 35px;
+        height: 1px;
+        background: gray;
+    }
+}

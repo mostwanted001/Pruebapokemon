@@ -1,0 +1,188 @@
+.pokeList {
+    margin-top: 50px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #353535;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.pokeListEmptParrafo {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.buttonVolver {
+    background-color: red;
+    width: 131px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    position: static;
+    border-radius: 60px;
+    border: red;
+    cursor: pointer;
+    margin-bottom: 50%;
+    margin-top: 10px;
+}
+
+.icobtnListaVacio {
+    position: absolute;
+    margin-left: -260px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icobtnestrellaVacia {
+    position: absolute;
+    margin-left: 78px;
+    margin-top: -3px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.contenedorButtonvacio {
+    width: 1152px;
+    height: 80px;
+    background-color: #FFFFFF;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonListaVacia {
+    background-color: #dddd;
+    border-radius: 60px;
+    width: 275px;
+    height: 44px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    margin: 0 31px 0 0;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.buttonFavoritesVacia {
+    background-color: red;
+    border-radius: 60px;
+    width: 275px;
+    height: 44px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+
+@media screen and (max-width: 767px) {
+    .pokeListEmpty {
+        width: 336px;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+
+
+    .pokeList {
+        margin-top: 50px;
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #353535;
+    }
+
+
+    .pokeListEmptParrafo {
+        font-size: 20px;
+        color: #5E5E5E;
+    }
+
+    .buttonVolver {
+        background-color: red;
+        width: 131px;
+        height: 44px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        position: static;
+        border-radius: 60px;
+        border: red;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 50%;
+        margin-top: 10px;
+    }
+
+    .icobtnListaVacio {
+        position: absolute;
+        margin-left: -254px;
+        cursor: pointer;
+    }
+
+    .icobtnestrellaVacia {
+        position: absolute;
+        margin-left: 71px;
+        margin-top: -3px;
+        cursor: pointer;
+    }
+
+
+    .contenedorButtonvacio {
+        width: 375px;
+        height: 80px;
+        background-color: #FFFFFF;
+        box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -18px;
+        top: 145px;
+    }
+
+    .buttonListaVacia {
+        background-color: #dddd;
+        border-radius: 60px;
+        width: 150px;
+        height: 44px;
+        color: #ffffff;
+        border: none;
+        font-size: 18px;
+        margin: 0 31px 0 0;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        top: 2px;
+        position: relative;
+    }
+
+    .buttonFavoritesVacia {
+        background-color: red;
+        border-radius: 60px;
+        width: 150px;
+        height: 44px;
+        color: #ffffff;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        top: 2px;
+        position: relative;
+    }
+
+}

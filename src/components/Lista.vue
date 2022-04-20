@@ -1,11 +1,14 @@
 
 <template>
+  <div v-if="loading" class="cargando">
+    <Loader />
+  </div>
   <Busqueda :apiUrl="apiUrl" @setPokemonUrl="setPokemonUrl"/>
   <div class="contenedorLista">
     <ul>
       <li class="estiloLista" v-for="(pokemons, index) in pokemon" :key="index">
         <div class="listaPokemons">
-          <p @click="mostrarPokemon()" class="nombres">{{pokemons.name}}</p>
+          <p @click="mostrarPokemon(pokemons)" class="nombres">{{pokemons.name}}</p>
           <div>
             <img alt="Vue logo" class="elipse" src="@/assets/imagenes/ellipse23.png"/>
             <img alt="Vue logo" class="estrella" src="@/assets/imagenes/estrella.png"/>
@@ -22,7 +25,7 @@
 
   </div>
 
-<DetallesPokemon v-if="showDetail" @cerrarDetalles="cerrarDetalles"/>
+  <DetallesPokemon v-if="showDetail" @cerrarDetalles="cerrarDetalles" :showDetail="showDetail" :mostrarPokemon="mostrarPokemon" :detallePokemon="detallePokemon"/>
   
 </template>
 
@@ -30,38 +33,56 @@
 import axios from 'axios'
 import DetallesPokemon from './DetallesPokemon.vue'
 import Busqueda from './Busqueda.vue'
-
+import Loader from './Loader.vue';
+ 
 export default {
   data() {
     return{
        pokemon:null,
        showDetail: false,
        apiUrl: 'https://pokeapi.co/api/v2/pokemon',
-       pokemonUrl:""
+       pokemonUrl:"",
+       pokemonName:'',
+       detallePokemon:[],
+       loading: false
     }
   },
-  mounted(){
-      console.log('hola que tal')
+  mounted: async function() {
       this.getPokemon();
   },
-  
    components: {
-     DetallesPokemon,
-     Busqueda
-  },
-  
+    DetallesPokemon,
+    Busqueda,
+    Loader,
+}, 
   methods:{
-    getPokemon(){
+   
+   ocultarLoading(){
+    setTimeout(() => {
+       this.loading = false
+          
+     }, 9000);
+   },
+   
+   getPokemon(){
+      this.loading = true
       axios
       .get(this.apiUrl)
       .then(response => {
-          this.pokemon = response.data.results
+         this.pokemon = response.data.results
+          this.detallePokemon = response.data.results
+          this.ocultarLoading()
+         
       })  
-      .catch( e=> console.log(e))
+      .catch((e) => {
+        this.loading = false
+      }) 
+      
     },
 
-    mostrarPokemon(){
+    mostrarPokemon(pokemons){
         this.showDetail = true
+        this.detallePokemon = pokemons
     },
 
     cerrarDetalles(){
@@ -75,13 +96,14 @@ export default {
       this.pokemonUrl = "";
     },
 
-  }
+  },
  
 }
 </script>
 
 <style>
 
-@import '@/assets/lista.css';
-
+@import '@/css/lista.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 </style>

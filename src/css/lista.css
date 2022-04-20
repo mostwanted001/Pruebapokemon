@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&display=swap');
+
+.listaPokemons {
+    background-color: #FFFFFF;
+    color: #353535;
+    width: 570px;
+    height: 60px;
+    font-size: 26px;
+    text-align: left;
+    border-radius: 5px;
+
+}
+
+.estiloLista {
+    margin-bottom: 11px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.elipse {
+    position: relative;
+    top: -37px;
+    left: 490px;
+}
+
+.estrella {
+    position: relative;
+    top: -48px;
+    left: 455px;
+    cursor: pointer;
+}
+
+.icobtnLista {
+    position: absolute;
+    margin-left: -371px;
+    cursor: pointer;
+}
+
+.icobtnestrella {
+    position: absolute;
+    margin-left: 181px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.nombres {
+    text-transform: capitalize;
+    margin: 14px 0 0 14px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.4px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedorButton {
+    width: 1152px;
+    height: 80px;
+    background-color: #FFFFFF;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLista {
+    background-color: red;
+    border-radius: 60px;
+    width: 275px;
+    height: 44px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    margin: 0 31px 0 0;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.buttonFavorites {
+    background-color: #BFBFBF;
+    border-radius: 60px;
+    width: 275px;
+    height: 44px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.cargando{
+    position: fixed;
+  background: white;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:50;
+}
+
+@media screen and (max-width: 767px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&display=swap');
+
+    .contenedorLista {
+        width: 336px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .listaPokemons {
+        background-color: #FFFFFF;
+        color: #353535;
+        width: 315px;
+        height: 60px;
+        font-size: 26px;
+        text-align: left;
+        border-radius: 5px;
+
+    }
+
+    .estiloLista {
+        margin-bottom: 11px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .elipse {
+        position: relative;
+        top: -37px;
+        left: 256px;
+    }
+
+    .estrella {
+        position: relative;
+        top: -48px;
+        left: 222px;
+        cursor: pointer;
+    }
+
+    .icobtnLista {
+        position: absolute;
+        margin-left: -260px;
+        cursor: pointer;
+        z-index: 1;
+    
+    }
+    
+    .icobtnestrella {
+        position: absolute;
+        margin-left: 78px;
+        margin-top: -3px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .nombres {
+        text-transform: capitalize;
+        margin: 14px 0 0 14px;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26.4px;
+        font-family: 'Lato', sans-serif;
+        color: #353535;
+    }
+
+    .contenedorButton {
+        width: 375px;
+        height: 80px;
+        background-color: #FFFFFF;
+        box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -18px;
+    }
+
+    .buttonLista {
+        background-color: red;
+        border-radius: 60px;
+        width: 150px;
+        height: 44px;
+        color: #ffffff;
+        border: none;
+        font-size: 18px;
+        margin: 0 31px 0 0;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        top: 2px;
+        position: relative;
+
+    }
+
+    .buttonFavorites {
+        background-color: #BFBFBF;
+        border-radius: 60px;
+        width: 150px;
+        height: 44px;
+        color: #ffffff;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        top: 2px;
+        position: relative;
+    }
+
+
+}

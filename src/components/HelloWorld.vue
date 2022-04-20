@@ -42,6 +42,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-@import '@/assets/home.css';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&display=swap');
+@import '@/css/home.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 </style>

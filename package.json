@@ -7,9 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@vueuse/core": "^8.2.6",
+    "@vueuse/integrations": "^8.2.6",
     "axios": "^0.26.1",
     "core-js": "^3.8.3",
+    "promise-timers": "^1.0.1",
     "vue": "^3.2.13",
+    "vue-clipboard2": "^0.3.3",
+    "vue-loading-overlay": "5.0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },

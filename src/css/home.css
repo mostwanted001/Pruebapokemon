@@ -1,0 +1,197 @@
+body {
+    background-color: #E5E5E5;
+}
+
+#app {
+    background-color: white;
+    width: 100%;
+    max-width: 1152px;
+    height: 100%;
+    margin: 0% auto;
+    position: relative;
+    margin-top: 12px;
+}
+
+.contenedorImagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -87px;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1152px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circuloRojo {
+    position: absolute;
+}
+
+.imagenPikachu {
+    z-index: 1;
+    position: relative;
+    top: 190px;
+    left: 9px;
+}
+
+.home {
+
+}
+
+.contenedorTitulo {
+    margin-top: 226px;
+    width: 570px;
+    height: 31px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.contenedorSub {
+    width: 564px;
+    height: 54px;
+    margin-bottom: 50px;
+}
+
+.subTitulo {
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #5e5e5e;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.containerButton {}
+
+.buttonIniciar {
+    background-color: red;
+    width: 131px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    position: static;
+    border-radius: 60px;
+    border: red;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+/* parte mobile*/
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #F9F9F9;
+    }
+
+    #app {
+        background-color: white;
+        width: 100%;
+        max-width: 375px;
+        height: 100vh;
+        margin: 0% auto;
+        position: relative;
+        margin-top: 12px;
+    }
+
+
+
+    .contenedorImagen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: -184px;
+        position: relative;
+    }
+
+    .wrapper {
+        position: relative;
+        max-width: px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home {
+        height: 100vh;
+
+    }
+
+
+    .circuloRojo {
+        position: absolute;
+    }
+
+    .imagenPikachu {
+        z-index: 1;
+        position: relative;
+        top: 230px;
+        left: 9px;
+    }
+
+    .contenedorTitulo {
+        margin-top: 226px;
+        width: 246px;
+        height: 31px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .titulo {
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .contenedorSub {
+        width: 315px;
+        height: 82px;
+        margin-bottom: 102px;
+    }
+
+    .subTitulo {
+        text-align: center;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #5e5e5e;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .containerButton {}
+
+    .buttonIniciar {
+        background-color: red;
+        width: 131px;
+        height: 44px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        position: static;
+        border-radius: 60px;
+        border: red;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+}
